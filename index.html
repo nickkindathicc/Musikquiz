@@ -3,6 +3,7 @@
 <head>
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
+    
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,24 @@
 </head>
 <body>
 
+  <!--navbar-->
+
+  <header>
+    <img class="logo" src="bilder/emotionen/0.jpg" alt="logo">
+    <nav>
+      <ul class="nav__links">
+          <li><a href="home.html" >Home</a></li>
+          <li><a href="games.html">Games</a></li>
+      </ul>
+      <a class="cta" href="#"><button>Beste Klassische Musik</button></a>
+    </nav>
+  </header>
   
 
   <div id="container">
     <div id="start">Spiele Romantik!</div>
     <div id="quiz" style="display: none;">
-    <div id="qMp3"> <audio autoplay> <source href="\musik\klassik\3. Gavattes Beethoven.mp3"></audio></div>
+    <div id="qMp3"> <audio controls autoplay> <source src="\musik\klassik\3. Gavattes Beethoven.mp3"></audio></div>
     <div id="question">
       <p>Musikstück</p>
     </div>
