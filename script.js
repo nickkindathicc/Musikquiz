@@ -25,14 +25,14 @@ let score = 0;
 let questions = [
   {
     question : "Welcher Musiker hat dieses Stück Komponiert?",
-    mp3Src : "https://drive.google.com/file/d/10ZhM28nUtQbq37nxwjYmEA5llnoiV5ls/preview?usp=sharing",
+    mp3Src : "/musik/klassik/3. Gavattes Beethoven.mp3",
     choiceA : "bilder/Beethoven.jpg",
     choiceB : "bilder/Mozart.jpg",
     choiceC : "bilder/Vivaldi.jpg",
     correct : "A"
   },{
     question : "Welcher Musiker hat dieses Stück komponiert?",
-    mp3Src : "https://drive.google.com/file/d/1L8ZPObWrNk1vGci-e-qBbFeaQQJSJqKR/preview?usp=sharing",
+    mp3Src : "/musik/klassik/3. Gavattes Beethoven.mp3",
     choiceA : "bilder/Mozart.jpg",
     choiceB : "bilder/Vivaldi.jpg",
     choiceC : "bilder/Beethoven.jpg",
@@ -47,7 +47,7 @@ function renderQuestion(){
 
   question.innerHTML = "<p>"+ q.question +"</p>";
 
-  qMp3.innerHTML = "<iframe src="+ q.mp3Src + "</iframe>"
+  qMp3.innerHTML = "<source"+ q.mp3Src + "></source>"
 
   choiceA.innerHTML = "<img src=" + q.choiceA +">";
 
